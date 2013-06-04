@@ -9,8 +9,8 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'jquery-rails', '2.0.2'
 
 group :development, :test do
-  #gem 'sqlite3', '1.3.5'
-  gem 'mysql2', '< 0.3.7'
+  gem 'sqlite3', '1.3.5'
+  gem 'mysql2'
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
   gem 'guard-spork', '1.2.0'  
@@ -38,5 +38,6 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'mysql2'
   gem 'activerecord-mysql2-adapter'
 end
